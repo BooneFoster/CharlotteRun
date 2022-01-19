@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="UTF-8">
+   <link href="styles/project.css" rel="stylesheet" type="text/css" >
+   <script src="scripts/navbar.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script src="scripts/w3.js"></script>
+      <title>Charlotte Run</title>
+      <link rel="shortcut icon" href="images/queencity.jpg">
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  <img src="images/queencity.jpg" height="60" width="70">
+                  <img src="images/shoe.png" height="60" width="60">
+                  <h1 class="title1">Charlotte Run</h1>
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="events.html">Events</a></li>
+                     <li><a href="miles.html">Log Miles</a></li>
+                     <li><a href="gallery.html">Gallery</a></li>
+                     <li><a href="charity.html">Charity</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <h2>
+            Weekly Charity - November 21-28, 2021
+         </h2>
+         <main>
+         <center>
+         <p2>Men's Shelter of Charlotte - A local charity that focuses on serving the unhoused in downtown Charlotte.</p2>
+         <br><br><br>
+         <img src="images/charirty1.jpg">
+         </center>
+
+         <p>
+            Please fill out a quick form if you would like to learn how to contribute.
+         </p>
+         <form action="#">
+            <p>First Name: 
+            <input type="text" placeholder="John" required> <br><br>
+            Last Name: 
+            <input type="text" placeholder="Smith" required> <br><br>
+            E-mail Address:
+            <input type="email" placeholder="johnsmith@mail.com" required> <br><br>
+            </p>
+            <input id="signupbutton" type="submit" value="Submit">
+            <br>
+         </form>
+      </div>
+   </main>
+      <div w3-include-html="components/footer.html"></div>
+
+
+      <script> w3.includeHTML(); </script>
+   </body>
+</html>

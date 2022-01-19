@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="UTF-8">
+   <link href="styles/project.css" rel="stylesheet" type="text/css" >
+   <script src="scripts/navbar.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+   <script src="scripts/w3.js"></script>
+   <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+
+      <title>Charlotte Run</title>
+      <link rel="shortcut icon" href="images/queencity.jpg">
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  <img src="images/queencity.jpg" height="60" width="70" alt="site logo">
+                  <img src="images/shoe.png" height="60" width="60" alt="site logo">
+                  <h1 class="title1">Charlotte Run</h1>
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="events.html">Events</a></li>
+                     <li><a href="miles.html">Log Miles</a></li>
+                     <li><a href="gallery.html">Gallery</a></li>
+                     <li><a href="charity.html">Charity</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <h2>
+            Log Your Miles
+         </h2>
+         <main>
+         <p>Simply fill out the form and hit submit to log your miles with the community!</p>
+         <form action="#">
+            <p>First Name: 
+            <input type="text" placeholder="John" required> <br><br>
+            Last Name: 
+            <input type="text" placeholder="Smith" required> <br><br>
+            E-mail Address:
+            <input type="email" placeholder="johnsmith@mail.com" required> <br><br>
+            Run Type:
+            <select>
+               <option>Walk</option>
+               <option>Jog</option>
+               <option>Run</option>
+            </select> <br><br>
+            Distance:
+            <input type="text" placeholder="6.50 Miles" required> <br><br>
+            Location:
+            <input type="text" placeholder="Southpark area" required> 
+            <div id="datepicker"></div>
+            <script>
+            $("#datepicker").datepicker();
+            </script>
+            </p>
+            <input id="signupbutton" type="submit" value="Submit">
+            <br><br><br>
+         </form>
+      </div>
+   </main>
+      <div w3-include-html="components/footer.html"></div>
+
+
+      <script> w3.includeHTML(); </script>
+   </body>
+</html>

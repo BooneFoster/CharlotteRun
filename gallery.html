@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="UTF-8">
+   <link href="styles/gallery.css" rel="stylesheet" type="text/css" >
+   <script src="scripts/navbar.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   <script src='scripts/gallery.js'> </script>
+   <script src="scripts/w3.js"></script>
+      <title>Charlotte Run</title>
+      <link rel="shortcut icon" href="images/queencity.jpg">
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  <img src="images/queencity.jpg" height="60" width="70" alt="site logo">
+                  <img src="images/shoe.png" height="60" width="60" alt="site logo">
+                  <h1 class="title1">Charlotte Run</h1>
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="events.html">Events</a></li>
+                     <li><a href="miles.html">Log Miles</a></li>
+                     <li><a href="gallery.html">Gallery</a></li>
+                     <li><a href="charity.html">Charity</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <div id="imageids">
+         <h2>Gallery</h2>
+         <main>
+            <center><p2 id="caption">Running outside Cabarrus County!</p2></center>
+            <br><br><br>
+            <img id="slide" src="images/runner0.jpeg" alt="">
+            <div id="slides">
+               <img src="images/runner1.jpeg" class="slideshow" alt="Jasmine running in Alpine Park!">
+               <img src="images/runner2.jpeg" class="slideshow" alt="Sarah running downtown!">
+               <img src="images/runner3.jpeg" class="slideshow" alt="Start of the annual Charlotte 10k!">
+               <img src="images/runner4.jpeg" class="slideshow" alt="Runners take on the Hilly 5k!">
+            </div>
+         </div>
+         <br><br><br><br><br><br>
+      </div>
+      </main>
+      <div w3-include-html="components/footer.html"></div>
+
+
+      <script> w3.includeHTML(); </script>
+   </body>
+</html>
